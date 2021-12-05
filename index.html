@@ -13,10 +13,21 @@
 
 <body>
     <section class="container">
-        <div id = "display-time">
-            <span id="clock"></span>
+        <div id="display-time">
+            <span id="clock"> </span>
         </div>
-        
+
+        <form id="set-alarm-field">
+            <input type="number" name="hours" id="hours" placeholder="HH" max="12" min="00">
+            <input type="number" name="minutes" id="minutes" placeholder="MM" max="59" min="00">
+            <input type="number" name="seconds" id="hours" placeholder="SS" max="59" min="00">
+        </form>
+
+        <div id="controls"> 
+            <button type="submit" id="submitButton" form="set-alarm-field" > Set Alarm </button>
+            <button type="reset" id="stopButton" form="set-alarm-field"> Stop Alarm </button>
+        </div>
+
     </section>
 
     <!-- JavaScript File Link -->
